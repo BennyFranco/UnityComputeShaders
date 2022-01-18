@@ -29,11 +29,13 @@ public class Challenge1 : MonoBehaviour
     {
         kernelHandle = shader.FindKernel("Square");
 
-		//Create a Vector4 with parameters x, y, width, height
+        //Create a Vector4 with parameters x, y, width, height
         //Pass this to the shader using SetVector
-        
+        Vector4 rect = new Vector4(texResolution >> 2, texResolution >> 2, texResolution >> 1, texResolution >> 1);
+        shader.SetVector("rect", rect);
+
         shader.SetTexture(kernelHandle, "Result", outputTexture);
-       
+
         rend.material.SetTexture("_MainTex", outputTexture);
 
         DispatchShader(texResolution / 8, texResolution / 8);

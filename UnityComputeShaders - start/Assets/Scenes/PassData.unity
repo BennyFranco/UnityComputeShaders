@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -405,5 +405,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shader: {fileID: 7200000, guid: 756fdf376924444448447023079e37cc, type: 3}
   texResolution: 1024
-  clearColor: {r: 0, g: 0, b: 0, a: 0}
-  circleColor: {r: 0, g: 0, b: 0, a: 0}
+  clearColor: {r: 0.06672716, g: 0, b: 1, a: 1}
+  circleColor: {r: 1, g: 0.97048855, b: 0, a: 1}
